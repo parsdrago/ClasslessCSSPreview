@@ -3,20 +3,25 @@
     <head>
         <meta charset="utf-8">
         <title>Classless CSS Preview</title>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <div name="controller">
-            <input type="file" id="fileForPreview" accept="text/html">
-            <div>
-                <input type="radio" name="selectCss" id="null" value="" checked>
-                <label for="null">null</label>
+        <div id="wrapper">
+            <div id="controller">
+                <input type="file" id="fileForPreview" accept="text/html">
+                <div id="cssSelector">
+                    <div>
+                        <input type="radio" name="selectCss" id="null" value="" checked>
+                        <label for="null">null</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="selectCss" id="watercss" value="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+                        <label for="watercss">water.css</label>
+                    </div>
+                </div>
             </div>
-            <div>
-                <input type="radio" name="selectCss" id="watercss" value="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-                <label for="watercss">water.css</label>
-            </div>
+            <iframe id="previewFrame"></iframe>
         </div>
-        <iframe id="previewFrame"></iframe>
         <script src="index.js"></script>
     </body>
 </html>

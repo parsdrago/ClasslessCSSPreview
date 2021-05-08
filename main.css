@@ -1,0 +1,23 @@
+#wrapper {
+    display: grid;
+    height: 97vh;
+    grid-template-columns: 20em auto;
+}
+
+#controller {
+    display: block;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 2em auto;
+}
+
+#cssSelector {
+    overflow-y: scroll;
+}
+
+#previewFrame {
+    display: block;
+    position: inherit;
+    width: 100%;
+    height: 100%;
+}
